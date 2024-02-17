@@ -93,10 +93,12 @@
     "env": "node createDotEnv",
     "target": "firebase target:apply hosting rowy",
     "deploy": "firebase deploy --only hosting",
-    "typedoc": "typedoc --options typedoc.json"
+    "typedoc": "typedoc --options typedoc.json",
+    "build:digitalocean": "npm install --production=false && npm run build && npm ci"
   },
   "engines": {
-    "node": ">=16"
+    "node": "16.x",
+    "npm": "~10.2.4"
   },
   "eslintConfig": {
     "plugins": [
