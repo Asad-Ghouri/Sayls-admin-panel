@@ -97,7 +97,7 @@
     "build:digitalocean": "npm install --production=false && npm run build && npm ci"
   },
   "engines": {
-    "node": "16.x",
+    "node": "20.x",
     "npm": "~10.2.4"
   },
   "eslintConfig": {
